@@ -1,6 +1,8 @@
 # Vaporwave-Startpage
 Vaporwave themed startpage
 
+preview : https://cdn.rawgit.com/Guthlx/Vaporwave-Startpage/master/vaporwave.html
+
 #Firefox setup
  
 move the file to
