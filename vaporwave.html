@@ -82,10 +82,10 @@
 	    <script language="Javascript">
 	    message = new Date()
 	    h = message.getHours()
-	    if ((h >= 0) && (h < 4)) {document.write("夜更かし Late hours 夜更かし")}
+	    if ((h >= 0) && (h <= 4)) {document.write("夜更かし Late hours 夜更かし")}
 	    if ((h >= 4) && (h <= 6)) {document.write("早い時間 Early hours 早い時間")}
-	    if ((h < 12) && (h >= 6)) {document.write("朝 Morning 朝")}
-	    if ((h >= 12) && (h < 18)) {document.write("午後 Afternoon 午後")}
+	    if ((h >= 12) && (h <= 6)) {document.write("朝 Morning 朝")}
+	    if ((h >= 12) && (h <= 18)) {document.write("午後 Afternoon 午後")}
 	    if ((h >= 18) && (h <= 23)) {document.write("イブニング Evening イブニング")}
 	    </script>
 	</div>
@@ -94,10 +94,10 @@
 	    <script language="Javascript">
 	    message = new Date()
 	    h = message.getHours()
-	    if ((h >= 0) && (h < 4)) {document.write("夜更かし Late hours 夜更かし")}
+	    if ((h >= 0) && (h <= 4)) {document.write("夜更かし Late hours 夜更かし")}
 	    if ((h >= 4) && (h <= 6)) {document.write("早い時間 Early hours 早い時間")}
-	    if ((h < 12) && (h >= 6)) {document.write("朝 Morning 朝")}
-	    if ((h >= 12) && (h < 18)) {document.write("午後 Afternoon 午後")}
+	    if ((h >= 12) && (h <= 6)) {document.write("朝 Morning 朝")}
+	    if ((h >= 12) && (h <= 18)) {document.write("午後 Afternoon 午後")}
 	    if ((h >= 18) && (h <= 23)) {document.write("イブニング Evening イブニング")}
 	    </script>
 	</div>
