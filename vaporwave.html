@@ -10,6 +10,9 @@
     <META HTTP-EQUIV="refresh" CONTENT="30">
 
     <link rel="icon" type="image/png" href="https://i.imgur.com/VxWqDVR.png">
+	
+	<!-- Search function -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
     <style type="text/css">
     	body {
@@ -17,6 +20,8 @@
     	background-repeat: no-repeat;
     	background-attachment: fixed;
     	background-size: cover;
+    	font-family: Times New Roman;
+
 		}
 		
 		#cone1 {
@@ -41,18 +46,16 @@
 		
 		#nintendo {
 		    text-align: center;
-		    margin-top: 200px;
+		    margin-top: 100px;
 		}
 		
 		#greeting {
-		    font-family: Times New Roman;
 		    color: #ff30cb;
 		    font-size: 60px;
 		    text-align: center;
 		}
 		
 		#greeting_front {
-		    font-family: Times New Roman;
 		    color: purple;
 		    font-size: 60px;
 		    text-align: center;
@@ -66,12 +69,36 @@
 		
 		#greeting:hover {
 		    color: yellow;
-		}	
+		}
+
+		.inputs {
+  			margin-top: 4em;
+		}
+
+		.inputs .search {
+			font-size: 18px;
+		  	width: 12%;
+		  	background: none;
+		  	padding: 1em;
+		    margin-left: 43%;
+		  	border: none;
+		  	border-bottom: 2px solid #262626;
+		  	text-align: center;
+		  	color: #262626;
+		  	letter-spacing: 2px;
+		  	transition: all 50ms ease-in-out;
+		  	font-weight: bold;
+		}
     </style>
-
 </head>
-
 <body>
+
+	<div class="inputs">
+	  <form method="get" action="http://www.google.com/search"><!-- Simply remove this vvv if you dont want autofocus-->
+	    <input type="text" name="q" placeholder="S  E  A  R  C  H" class="search" autofocus="yes" autocomplete="off" >
+	  </form>
+	</div>
+
 	<div id="cone1"><img src="https://i.imgur.com/fd0Lrob.gif"	alt="cone.gif" style="width: 150px;"></div>
 
 	<div id="cone2"><img src="https://i.imgur.com/fd0Lrob.gif"	alt="cone.gif" style="width: 150px;"></div>
@@ -105,6 +132,6 @@
 	    if ((h >= 20) && (h <= 23.59)) {document.write("夜 Night 夜")}
 	    </script>
 	</div>
-</body>
 
+</body>
 </html>
